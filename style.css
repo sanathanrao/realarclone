@@ -535,6 +535,7 @@ nav .btn {
 
 /* About section responsive */
 @media screen and (max-width: 1350px){
+
  .aboutimg{
    display: flex;
    flex-direction: column;
@@ -713,7 +714,9 @@ nav .btn {
 }
 
 /* media  responsive */
-
+@media screen and  (max-width: 1350px){
+ 
+}
 
 
 
@@ -739,7 +742,6 @@ nav .btn {
   font-size: 45px;
   top: -55px;
 }
-
 .button-28{
   position: relative;
   padding: 13px 18px;
@@ -795,6 +797,9 @@ nav .btn {
   border-radius: 10px;
   padding: 10px;
 }
+.resort{
+  color: #eed26e;
+}
 .resortlist{
   color: #eed26e;
   padding-bottom: 10px;
@@ -839,6 +844,25 @@ nav .btn {
    border-radius: 20px;
    margin-right: 20px;
 }
+.projectdddjj{
+  color: #eed26e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 20px;
+  margin-left: 80px;
+}
+
+.projhih p{
+  color: #fff;
+  margin-bottom: 25px;
+}
+.projhih{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 60px;
+}
 .area{
   color: #fff;
   display: flex;
@@ -866,15 +890,16 @@ nav .btn {
   margin-top: 25px;
   border-top-width: 1px;
   margin-left: 70px;
+  display: none;
 }
 .grah1{
   border-top-width: 1px;
-  width: 370px;
+  width: 420px;
   border: 1px solid #3f4d55;
   -webkit-transform:rotate(90deg);
   position: relative;
-  top: 180px;
-  right: 50px;
+  top: 210px;
+  right: 70px;
 }
 .grah2{
   border-top-width: 1px;
@@ -920,6 +945,7 @@ nav .btn {
   background-repeat: no-repeat;
   background-position: -120px -120px, 0 0;
   transition-duration: 2s;
+  margin-left: 80px;
   
   background-image: -webkit-linear-gradient(
     top left,
@@ -979,6 +1005,9 @@ nav .btn {
    font-weight: 500;
    margin-left: 16px;
 }
+.acr, .hmda, .versa{
+  margin-left: 20px;
+}
 /* ----------media quries---------------- */
 @media screen and  (max-width: 1350px){
   .resortrespon{
@@ -1030,6 +1059,11 @@ nav .btn {
     margin-top: 0px;
   }
 }
+@media screen and  (max-width: 960px){
+  .idgoup{
+    margin-top: -40px;
+  }
+}
 @media screen and  (max-width: 810px){
   .listtopi{
     display: flex;
@@ -1060,14 +1094,33 @@ nav .btn {
   .button-28{
     font-size: 14px;
     margin-left: -40px;
-    
+  }
+  .id{
+    display: none;
   }
 }
+
+@media screen and  (max-width: 730px){
+  .id{
+    margin-top: -65px;
+  }
+}
+
 @media screen and  (max-width: 666px){
   .resortrepids{
     position: relative;
     margin-left: 70px;
   }
+  .projectdddjj{
+    margin-left: 0px;
+  }
+  .acr{
+     margin-left: 0px;
+  }
+  .hmda{
+    margin-left: 20px;
+  }
+  
   .resortsection, .price , .area , .detailssection, .grahr{
     margin-left: 0px;
     width: 100%;
@@ -1084,6 +1137,7 @@ nav .btn {
   }
   .button-29{
     padding: 12px;
+    margin-left: 0px;
   }
   .grahr{
     margin-left: 0px;
@@ -1114,6 +1168,15 @@ nav .btn {
  .alpidown{
   margin-top: 40px;
  }
+ .projhih{
+   margin-left: 0px;
+ }
+ .versa{
+  margin-left: 0px;
+ }
+ .id{
+  margin-top: -80px;
+ }
 }
 @media screen and  (max-width: 580px){
   .idgoup{
@@ -1122,6 +1185,24 @@ nav .btn {
   .alpidown{
     margin-top: 40px;
    }
+   .id{
+    margin-top: -100px;
+   }
+}
+@media screen and (max-width:853px){
+  .id{
+    margin-top: -5px;
+  }
+}
+@media screen and (max-width: 540px){
+  .id{
+    margin-top: -50px;
+   }
+}
+@media screen and (max-width: 518px){
+  .hmda{
+    margin-left: 0px;
+  }
 }
 
 @media screen and  (max-width: 500px){
@@ -1134,6 +1215,14 @@ nav .btn {
   .idgoup{
     margin-top: -35px;
   }
+  .hmda{
+    margin-left: 0px;
+  }
+}
+@media screen and  (max-width: 496px){
+   .id{
+    margin-top: -120px;
+   }
 }
 @media screen and  (max-width: 450px){
   .mai{
@@ -1733,6 +1822,7 @@ nav .btn {
   margin-bottom: 20px;
 }
 .emphasis{
+  color: #fff;
   padding-bottom: 15px;
   width: 80%;
   font-size: 25px;
@@ -1752,8 +1842,31 @@ nav .btn {
   object-fit: cover;
   border-radius: 20px;
 }
+.resortpod{
+  margin-left: 30px;
+}
+.revvds{
+  display: flex;
+  background-color: #1c2d37; 
+  padding: 40px;
+}
 /* quries */
 @media screen and  (max-width: 1350px){
+  .revvds{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .blogsection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Bloglarge{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .newsection{
     display: flex;
     flex-direction: column;
@@ -1771,6 +1884,35 @@ nav .btn {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  .revvds{
+    padding: 0px;
+  }
+}
+@media screen and  (max-width: 680px){
+   .Bloglarge{
+     font-size: 80px;
+   }
+   .featurelatest{
+    font-size: 30px;
+   }
+}
+@media screen and  (max-width: 580px){
+ .rapidimg img{
+   width: 400px;
+   margin-top: 20px;
+   margin-left: 20px;
+ }
+}
+@media screen and  (max-width: 450px){
+  .rapidimg img{
+     width: 330px;
+  }
+}
+@media screen and  (max-width: 360px){
+  .rapidimg img{
+    width: 260px;
+    height: 280px;
+ }
 }
 
 
