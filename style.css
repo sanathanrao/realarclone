@@ -26,8 +26,12 @@ html {
   padding: 0;
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
   font-family: "Montserrat", serif;
+  background-image: url("img_tree.gif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -65,6 +69,9 @@ nav {
   text-decoration: none;
   border-bottom: none !important;
   box-shadow: none !important;
+}
+.manvika{
+ width:  100px;
 }
 
 nav span {
@@ -149,11 +156,41 @@ nav .btn {
   nav .big-screens {
     display: none;
   }
+  .button-24{
+    display: none;
+  }
 }
+@media screen and (min-width: 1350px){
+  .flex img{
+    margin-left: 100px ;
+  }
+  .button-24{
+    margin-right: 100px;
+  }
+}
+@media screen and (min-width: 1450px){
+  .flex img{
+    margin-left: 160px;
+  }
+  .button-24{
+    margin-right: 160px;
+  }
+}
+@media screen and (min-width: 1770px){
+  .flex img{
+    margin-left: 250px;
+  }
+  .button-24{
+    margin-right: 250px;
+  }
+}
+/* --------------------------------- */
+
+
 /* MEDIA QUERIES ENDS*/
 
 
-/* section topnotch */
+/* Image container section topnotch */
 .container {
 	position: relative;
   left: auto;
@@ -175,6 +212,7 @@ nav .btn {
 	animation: change-img-anim 20s infinite;
   border-radius: 20px;
   z-index: 6;
+  filter: brightness(0.7);
 }
 
 .image:nth-of-type(1) {
@@ -242,7 +280,7 @@ nav .btn {
 .button-25:hover{
   border-radius: 25px;
 }
-/* ----------------media Quries------------- */
+/* ------------Image container----media Quries------------- */
 @media screen and  (max-width: 952px){
   .image{
     height:750px;
@@ -253,8 +291,66 @@ nav .btn {
     background-color: #1c2d37;
   }
 }
-
-
+@media screen and (min-width: 1770px){
+  .image{
+    width: 1300px;
+    height: 750px;
+    margin-left: -5%;
+  }
+}
+@media screen and (max-width: 1070px){
+  .imgheading{
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 810px){
+  .imgheading{
+    font-size: 50px;
+    margin-left: -70px;
+  }
+  .imagetext{
+    width: 90%;
+    font-size: 20px;
+    margin-left: -70px;
+  }
+  .button-25{
+    margin-left: -70px;
+  }
+}
+@media screen and (max-width: 666px){
+  .button-25{
+    margin-left: -100px;
+    font-size: 18px;
+  }
+  .imgheading{
+    font-size: 38px;
+    margin-left: -100px;
+  }
+  .imagetext{
+    font-size: 18px;
+    margin-left: -100px; 
+  }
+}
+@media screen and (max-width: 500px){
+  .imgheading{
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 375px){
+  .imgheading{
+    font-size: 25px;
+  }
+  .imagetext{
+    font-size: 16px;
+  }
+  .button-25{
+    margin-left: -100px;
+    font-size: 14px;
+  }
+  .image{
+    object-fit: cover;
+  }
+}
 
 
 /* __________________________________________ */
@@ -448,6 +544,7 @@ nav .btn {
  .aboutimg img{
   margin-bottom: 40px;
   border-radius: 30px 80px 30px  30px;
+  margin-left: 0px;
  }
  .Aboutlarge{
   font-size: 70px;
@@ -487,8 +584,48 @@ nav .btn {
   padding-top: 20px;
  }
 }
-/* -------------------------------------------------- */
-.projectsection .backgroundimg {
+@media screen and  (max-width: 810px){
+  .aboutend{
+    font-size: 35px;
+  }
+  .Propertyabout{
+    flex-direction: column;
+    padding-top: 40px;
+  }
+ }
+ @media screen and  (max-width: 666px){
+  .aboutend{
+    font-size: 30px;
+  }
+  .aboutimg img{
+    margin-bottom: 15px;
+  }
+  .aboutussection{
+    padding: 20px;
+  }
+  .aboutend{
+    padding-top: 30px;
+  }
+
+ }
+ @media screen and  (max-width: 510px){
+  .aboutend{
+    font-size: 25px;
+  }
+  .aboutimg img{
+    border-radius: 20px;
+  }
+
+}
+@media screen and  (max-width: 399px){
+  .aboutend{
+    font-size: 25px;
+    line-height: 50px;
+  }
+}
+
+/* -------------------project section------------------------------- */
+.projectsection  {
   position: relative;
   height: 100%;
   width: 100%;
@@ -496,9 +633,19 @@ nav .btn {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment:fixed;
+}
+.projectininmg{
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   filter: brightness(0.5);
 }
+.backgroundimg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .projectlarge{
   color: transparent;
   -webkit-text-stroke-width: 2px;
@@ -518,6 +665,8 @@ nav .btn {
   z-index: 10;
   width: 100%;
   line-height: 60px;
+   
+
 }
 .projecttext{
   color: #fff;
@@ -560,13 +709,23 @@ nav .btn {
   border-radius: 20px 100px 20px 20px;
   border: 2px solid #fff;
   object-fit: cover;
+  margin-top: 135px;
 }
+
+/* media  responsive */
+
+
+
+
+
+
+
+
+
 /* --------------listingsection----------------- */
 .listingsection{
   background-color: #1c2d37;
   padding: 40px;
-  position: relative;
-  top: -505px;
 }
 .listinglarge{
   color: transparent;
@@ -636,7 +795,7 @@ nav .btn {
   border-radius: 10px;
   padding: 10px;
 }
-.resort{
+.resortlist{
   color: #eed26e;
   padding-bottom: 10px;
   width: 50%;
@@ -664,8 +823,12 @@ nav .btn {
 }
 .alpina{
   padding-bottom: 15px;
-  width: 50%;
-  font-size: 25px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.alpina:hover{
+  color: #eed26e;
+  cursor: pointer;
 }
 .resortrespon{
   display: flex;
@@ -816,10 +979,219 @@ nav .btn {
    font-weight: 500;
    margin-left: 16px;
 }
+/* ----------media quries---------------- */
+@media screen and  (max-width: 1350px){
+  .resortrespon{
+     flex-direction: column;
+  }
+  .onethreefive{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .grah1, .grah2{
+    display: none;
+  }
+  .resortsection{
+    margin-top: 30px;
+  }
+  .resort{
+    margin-right: -100px;
+  }
+  .alpinaimg{
+     display: flex;
+     align-items: center;
+     margin-left:  70px;
+  }
+  .alpinaimg img{
+    margin-top: 40px;
+    width: 85%;
+    margin-bottom: 10px;
+  }
+  .id{
+    margin-top: 35px;
+    padding: 15px;
+    width: 80%;
+    margin-left: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .idgoup{
+    position: relative;
+    top:-370px;
+  }
+  .regodown{
+    position: relative;
+    top: 100px;
+  }
+}
+@media screen and (max-width: 1150px){
+  .idgoup{
+    margin-top: 0px;
+  }
+}
+@media screen and  (max-width: 810px){
+  .listtopi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .listingpara{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .listinglarge{
+     font-size: 50px;
+     margin-left: 20px;
+  }
+  .feature{
+    font-size: 25px;
+    margin-top: 28px;
+  }
+  .listingtext{
+    font-size: 16px;
+    width: 100%;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .button-28{
+    font-size: 14px;
+    margin-left: -40px;
+    
+  }
+}
+@media screen and  (max-width: 666px){
+  .resortrepids{
+    position: relative;
+    margin-left: 70px;
+  }
+  .resortsection, .price , .area , .detailssection, .grahr{
+    margin-left: 0px;
+    width: 100%;
+  }
+  .ba{
+    border: none;
+  }
+  .area{
+    flex-wrap: wrap;
+  }
+  .abbuilders{
+    font-size: 20px;
+    margin-left: 0px;
+  }
+  .button-29{
+    padding: 12px;
+  }
+  .grahr{
+    margin-left: 0px;
+  }
+  .alpina{
+    font-size: 20px;
+  }
+  .buildertxt{
+    margin-left: 5px;
+  }
+ .alpinaimg{
+   display: block; 
+   margin-left: 0px;
+  }
+ .alpinaimg img{
+   width: 100%;
+   height: 300px;
+   margin-top: 20px;
+   margin-left: 0;
+ }
+ .id{
+  margin-left: 0px;
+  width: 100%;
+ }
+ .idgoup{
+  margin-top: 10px;
+ }
+ .alpidown{
+  margin-top: 40px;
+ }
+}
+@media screen and  (max-width: 580px){
+  .idgoup{
+    margin-top: -30px;
+  }
+  .alpidown{
+    margin-top: 40px;
+   }
+}
+
+@media screen and  (max-width: 500px){
+  .cost{
+    font-size: 18px;
+  }
+  .stars, .rateing{
+    font-size: 15px;
+  }
+  .idgoup{
+    margin-top: -35px;
+  }
+}
+@media screen and  (max-width: 450px){
+  .mai{
+    margin-top: 15px;
+  }
+  .idgoup{
+    margin-top: -70px;
+  }
+}
+@media screen and  (max-width: 430px){
+  .idgoup{
+    margin-top: -80px;
+  }
+}
+
+
+@media screen and (max-width: 400px){
+   .listingsection{
+    padding: 30px;
+   }
+   .button-29{
+    padding: 8px;
+    font-size: 14px;
+  }
+  .buildertxt{
+    font-size: 17px;
+  }
+
+  .area{
+    font-size: 15px;
+  }
+  .mai{
+    margin-top: 10px;
+  }
+  .alpinaimg img{
+    height: 250px;
+    width: 100%;
+    border-radius: 20px 60px 20px 20px;
+  }
+  .detailssection, .area, .price{
+    width: 100%;
+  }
+  .alpidown{
+    margin-top: 50px;
+   }
+}
+
+
+
+
+
+
 /* ------------------look at apartment---------------------- */
 .looksection{
   display: flex;
-  margin-bottom: 80px;
+  background-color: #1c2d37;
+  padding: 40px;
+
 }
 .looksectiontext{
   color: #000;
@@ -876,14 +1248,104 @@ nav .btn {
   color: #3f4d55;
   font-size: 14px;
 }
+/* -media queries */
+@media screen and  (max-width: 1350px){
+ .Apartment{
+   padding: 20px;
+ }
+ .smithsection{
+   padding: 20px;
+ }
+ .looksectiontext{
+   height: 550px;
+ }
+ .partme{
+  height: 550px;
+ }
+}
+@media screen and  (max-width: 1150px){
+.looksection{
+  flex-direction: column;
+}
+.looksectiontext{
+ border-radius: 30px 30px 0 0;
+}
+.partme{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0 0 30px 30px;
+}
+}
+@media screen and (max-width: 666px){
+  .modern{
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 566px){
+  .modern{
+    font-size: 35px;
+    line-height: 50px;
+    margin-bottom: 15px;
+  }
+  .smithsection{
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 500px){
+  .modern{
+    font-size: 25px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+  .moderntext{
+    font-size: 18px;
+  }
+  .smithsection{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .smithsection img{
+    margin: 20px;
+  }
+  .looksection{
+    padding: 20px;
+  }
+  .looksectiontext{
+    border-radius: 30px 30px 0 0;
+   }
+}
+@media screen and (max-width: 450px){
+ .looksectiontext{
+   height: 700px;
+ }
+}
+@media screen and  (max-width: 340px){
+  .looksectiontext{
+    height: 800px;
+  }
+}
+@media screen and  (max-width: 300px){
+  .looksectiontext{
+    height: 1000px;
+  }
+ }
+
+
+
+
+
+
+
+
+
 /* --------------------------- */
 .buysell{
- position: relative;
  display: flex;
  justify-content: center;
- top: -507px;
  background-color: #1c2d37;
- padding: 40px 30px 60px 30px;
+ padding: 40px;
 
 }
 .buysellrepons{
@@ -923,12 +1385,105 @@ nav .btn {
 .button-31:hover{
   border-radius: 25px;
 }
+ /* media quries */
+ @media screen and  (max-width: 1350px){
+  .buyselltexttext{
+    text-align: center;
+    
+  }
+  .selllarge , .buysellpara{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+  }
+  .buysell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .buing img{
+    width: 900px;
+    object-fit: cover;
+    margin-bottom: 40px;
+  }
+  .buysellrepons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    padding-left: 0px;
+  }
+  .buyselltext{
+    text-align: center;
+    margin-top: 5px;
+  }
+  br{
+    display: none;
+  }
+  .button-31{
+    margin: 30px 0;
+  }
+ }
+ @media screen and  (max-width: 1100px){
+   .buing img{
+     width: 750px;
+   }
+ }
+ @media screen and  (max-width: 900px){
+   .selllarge{
+    font-size: 70px;
+   }
+   .buyselltext{
+    font-size: 30px;
+    margin-top: 10px;
+   }
+ }
+ @media screen and  (max-width: 800px){
+  .buysellrepons{
+    padding-left: 0px;
+  }
+  .buing img{
+    width: 650px;
+  }
+}
+@media screen and  (max-width: 700px){
+  .buing img{
+    width: 100%;
+  }
+}
+@media screen and  (max-width: 600px){
+  .buysell{
+    padding: 20px;
+  }
+}
+@media screen and  (max-width: 500px){
+  .selllarge{
+    font-size: 40px;
+   }
+   .buyselltext{
+    margin-top: 25px;
+   }
+   .buysell{
+    padding: 10px;
+   }
+}
+
+
+
+
+
+
+
+
+
+
 /* ----------------------------------------- */
 .testimonialssection{
   display: flex;
   background: #c0cdd1;
-  position: relative;
-  top: -507px;
   padding: 40px;
 }
 .testilarge{
@@ -970,7 +1525,7 @@ nav .btn {
 }
 .bklyn{
   color: #3f4d55;
-  font-size: 15px;
+  font-size: 25px;
   margin-left: 20px;
   font-weight: 500;
 }
@@ -983,6 +1538,147 @@ nav .btn {
   top: -220px;
   left: 100px;
 }
+.jannysection img{
+  width: 150px;
+}
+.janny, .ceo{
+  font-size: 30px;
+}
+
+@media screen and  (max-width: 1350px){
+  .tesphooadj{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .client{
+    text-align: center;
+    margin-top: 5px;
+  }
+  .clienttext{
+    width: 100%;
+    margin: 20px 0;
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .testimid{
+    margin-left: 30px;
+  }
+  .testimonialssection{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .nofloatmain{
+    left: 300px;
+  }
+  .float{
+    top: 50px;
+    margin-bottom: 30px;
+  }
+  .floatingsection{
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and  (max-width: 1100px){
+  .floatingsection{
+    margin-left: -100px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and  (max-width: 900px){
+  .floatingsection{
+    margin-left: -200px;
+    margin-top: 30px;
+  }
+}
+@media screen and  (max-width: 800px){
+   .testilarge{
+    font-size: 70px;
+   }
+   .client{
+    font-size: 45px;
+    margin-top: 15px;
+   }
+   .clienttext{
+    font-size: 25px;
+    line-height: 35px;
+   }
+   .jannysection img{
+    width: 100px;
+  }
+  .janny, .bklyn{
+    font-size: 20px;
+  }
+  .floatingsection{
+    margin-left: -280px;
+   }
+}
+@media screen and  (max-width: 666px){
+  .testimonialssection{
+    padding: 20px;
+  }
+  .nofloatmain{
+    width: 380px;
+    height: 420px;
+    left: 280px;
+  }
+}
+@media screen and  (max-width: 600px){
+  .testilarge{
+    font-size: 58px;
+   }
+   .client{
+    font-size: 35px;
+    margin-top: 25px;
+   }
+   .nofloatmain{
+    width: 300px;
+    height: 350px;
+    object-fit: fill;
+  }
+  .float{
+    width: 300px;
+    left: 70px;
+  }
+}
+@media screen and  (max-width: 500px){
+  .testilarge{
+    font-size: 45px;
+   }
+   .client{
+    font-size: 25px;
+    margin-top: 35px;
+   }
+   .clienttext{
+    font-size: 20px;
+    line-height: 30px;
+   }
+   .testimid{
+    margin-left: 0;
+  }
+  .nofloatmain{
+    width: 380px;
+    height: 420px;
+    left: 280px;
+  }
+}
+@media screen and  (max-width: 370px){
+}
+.nofloatmain{
+ width: 300px;
+ height: 380px;
+ left: 280px;
+}
+
+
+
+
+
+
+
+
 /* ------------------------------------------------------ */
 .newandblogwrap{
   background-color: #1c2d37;
@@ -990,14 +1686,10 @@ nav .btn {
 }
 .blogsection{
  background-color: #1c2d37; 
- padding: 40px;
- position: relative;
- top: -40px;
+ padding: 40px 40px 0 40px;
  display: flex;
  justify-content: space-between;
  align-items: flex-end;
- position: relative;
- top: -650px;
 }
 .Bloglarge{
   color: transparent;
@@ -1039,7 +1731,6 @@ nav .btn {
 .resort{
   margin-top: 10px;
   margin-bottom: 20px;
-  margin-left: 40px;
 }
 .emphasis{
   padding-bottom: 15px;
@@ -1061,49 +1752,85 @@ nav .btn {
   object-fit: cover;
   border-radius: 20px;
 }
-.newsection{
-  position: relative;
-  top: -650px;
+/* quries */
+@media screen and  (max-width: 1350px){
+  .newsection{
+    display: flex;
+    flex-direction: column;
+  }
+  .rapidimg img{
+    margin-top: 40px;
+    margin-left: 40px;
+  }
 }
+@media screen and  (max-width: 680px){
+  .newsection{
+    padding: 2px;
+  }
+  .section{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
 /* ------------------------------------- */
 .footer{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: #1c2d37;
+  background-color: #c0cdd1;
   padding-top: 50px;
   padding-bottom: 50px;
-  position: relative;
-  top: -650px;
+  padding-left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footertext{
+  color: #171817;
+  font-size: 18px;
+  padding-bottom: 20px;
+  width: 40%;
 }
 .footer-box{
   padding: 10px;
+}
+.footer img{
+  width: 40%;
 }
 .footer-img img{
   width: 100px;
   height: 100px;
   object-fit: contain;
-  border-radius: 20px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  border: 1px solid #000;
+}
+.footericons{
+  margin-left: 20px;
 }
 
 .fa-brands{
   font-size: 25px;
   margin: 0 10px;
-  background-color: #16212c;
-  color: #FFFFFF;
+  background-color: #000;
+  color: #fff;
   width: 50px;
   height: 50px;
   border-radius: 100%;
   text-align: center;
   padding-top: 12px;
+  transition-duration: 0.5s;
 }
 .fa-brands:hover{
-  background-color: #6b9832;
-}
-.footer-heading{
-  position: relative;
-  top: -60px;
-  left: 140px;
+  background-color: #ffb20b;
+  color: #000;
 }
 .foo-links{
   margin-bottom: 20px;
@@ -1118,4 +1845,77 @@ nav .btn {
 }
 .usefull-links li a:hover , .other-links li a:hover{
   color: #ffb20b;
+}
+.fa-location-dot , .fa-phone, .fa-envelope {
+  font-size: 30px;
+  margin-right: 20px;
+}
+.getinto{
+  color: #1c2d37;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.intoss{
+  display: flex;
+  margin-bottom: 20px;
+}
+.foogetin{
+  position: relative;
+  left: -300px;
+}
+.innerlane{
+  margin-bottom: 10px;
+  color: #171817;
+  font-weight: 500;
+}
+/* ------------------------------------------- */
+.copyrightsection{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #171817;
+  font-size: 18px; 
+  font-weight: 400;
+  background-color: #a4b5ba;
+  padding: 30px;
+}
+.terms{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ---------------------- */
+
+.container-top {
+  --offset: 100px;
+  --fade: 120px;
+   background-color: #4caf50;
+   color: #eed26e;
+  display: flex;
+  width: 60px;
+  justify-self: end;
+  justify-content: flex-end;
+  align-items: flex-end;
+  -webkit-mask:linear-gradient(#0000 calc(100vh + var(--offset)),#000 calc(100vh + var(--offset) + var(--fade)));
+}
+
+.top {
+  position: sticky;
+  bottom: 20px;      
+  margin-right:10px; 
+  
+  /* visual styling */
+  width:100%;
+  aspect-ratio:1;
+  background:#ff8b24;
+  border-radius:10px;
+  color: red;
+}
+.top:before {
+  content:"";
+  position:absolute;
+  inset:30%;
+  transform:translateY(20%) rotate(-45deg);
+  border-top:5px solid #fff;
+  border-right:5px solid #fff;
 }
