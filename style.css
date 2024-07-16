@@ -1810,18 +1810,18 @@ nav .btn {
 }
 @media screen and  (max-width: 450px){
   .nofloatmain{
-    width: 200px;
-    height: 200px;
-    left: 200px;
+    width: 250px;
+    height: 250px;
+    left: 220px;
   }
     .float {
-      width: 180px;
+      width: 250px;
       left: 40px;
   }
 }
 @media screen and  (max-width: 400px){
   .testilarge{
-    font-size: 35px;
+    font-size: 38px;
    }
    .client{
     font-size: 20px;
@@ -2039,7 +2039,7 @@ nav .btn {
   margin-left: 20px;
 }
 
-.fa-brands{
+.fa-brands , .fa-globe{
   font-size: 25px;
   margin: 0 10px;
   background-color: #000;
@@ -2051,7 +2051,7 @@ nav .btn {
   padding-top: 12px;
   transition-duration: 0.5s;
 }
-.fa-brands:hover{
+.fa-brands:hover , .fa-globe:hover{
   background-color: #ffb20b;
   color: #000;
 }
@@ -2125,6 +2125,7 @@ nav .btn {
 @media screen and  (max-width: 700px){
   .footertext{
     width: 90%;
+    line-height: 30px;
   }
 }
 @media screen and  (max-width: 400px){
