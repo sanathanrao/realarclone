@@ -73,6 +73,9 @@ nav {
 .manvika{
   width: 200px;
 }
+#check{
+  display: none;
+}
 
 nav span {
   color: #4caf50;
@@ -98,7 +101,7 @@ nav a {
   font-size: 20px;
 }
 nav a:hover {
-  color: #4caf50;
+  color: #eed26e;
 }
 
 nav .btn {
@@ -126,6 +129,7 @@ nav .btn {
 .big-screens a{
   font-size: 18px;
 }
+
 .button-24:hover{
   border-radius: 25px;
 }
@@ -144,10 +148,10 @@ nav .btn {
 
 /* MOBILE */
 @media screen and (max-width: 850px){
+  /* ___________ */
   nav{
     padding: 1rem 5vw;
     }
-  
   nav .small-screens i{
     font-size: 25px;
     cursor: pointer;
@@ -231,42 +235,34 @@ nav .btn {
 	90%{ opacity: 1;}
 	100%{ opacity: 0;}
 }
+.textset{
+  padding: 40px;
+}
 .imgheading{
+  font-size: 60px;
   position: relative;
-  top: 120px;
-  left: 120px;
-  font-size: 80px;
-  font-weight: bold;
   background: none;
   color: #fff;
   z-index: 10;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Outfit", sans-serif;
   font-style: normal;
-  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-             0px 8px 13px rgba(0,0,0,0.1),
-             0px 18px 23px rgba(0,0,0,0.1);
+  padding: 20px;
 }
 .imagetext{
   line-height: 1.6;
   font-family: "Varela Round", sans-serif;
   color: #fff;
   position: relative;
-  top: 170px;
-  left: 120px;
   background: none;
   font-weight: 50px;
   width: 50%;
   font-size: 20px;
   z-index: 7;
-  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-             0px 8px 13px rgba(0,0,0,0.1),
-             0px 18px 23px rgba(0,0,0,0.1);
+  padding: 20px;
   
 }
 .button-25{
   position: relative;
-  top: 220px;
-  left: 120px;
   padding: 13px 18px;
   background-color: #eed26e;
   color: #000;
@@ -276,6 +272,8 @@ nav .btn {
   border: none;
   z-index: 10;
   transition-duration: 0.1s;
+  left: 20px;
+  top: 15px;
 }
 .button-25:hover{
   border-radius: 25px;
@@ -302,51 +300,39 @@ nav .btn {
 }
 @media screen and (max-width: 1070px){
   .imgheading{
-    font-size: 50px;
+    font-size: 25px;
   }
 }
 @media screen and (max-width: 810px){
-  .imgheading{
-    font-size: 50px;
-    margin-left: -70px;
-  }
+ 
   .imagetext{
     width: 90%;
     font-size: 20px;
-    margin-left: -70px;
-  }
-  .button-25{
-    margin-left: -70px;
   }
 }
 @media screen and (max-width: 666px){
   .button-25{
-    margin-left: -100px;
     font-size: 18px;
   }
-  .imgheading{
-    font-size: 38px;
-    margin-left: -100px;
-  }
+  
   .imagetext{
     font-size: 18px;
-    margin-left: -100px; 
   }
 }
 @media screen and (max-width: 500px){
-  .imgheading{
-    font-size: 30px;
-  }
+  
 }
-@media screen and (max-width: 375px){
+@media screen and (max-width: 430px){
   .imgheading{
     font-size: 25px;
   }
+}
+@media screen and (max-width: 375px){
+  
   .imagetext{
     font-size: 16px;
   }
   .button-25{
-    margin-left: -100px;
     font-size: 14px;
   }
   .image{
@@ -376,7 +362,7 @@ nav .btn {
   align-content: center;
 }
 .nu1 h1{
-  margin-left: 40px;
+  text-align: center;
   padding-bottom: 20px;
 }
 
@@ -717,8 +703,11 @@ nav .btn {
 
 /* media  responsive */
 @media screen and  (max-width: 1350px){
- 
+  .projectsection{
+    display: none;
+  }
 }
+
 
 
 
@@ -939,7 +928,6 @@ nav .btn {
   padding: 15px;
   display: block;
   position: relative;
-  width: 110px;
   color: #000;
   background-color: #fff;
   border:none;
@@ -1306,7 +1294,7 @@ nav .btn {
   border-radius: 30px 0 0 30px;
 }
 .Apartment{
-  padding: 45px;
+  padding: 100px;
 }
 .modern{
   font-size: 42px;
@@ -1316,8 +1304,8 @@ nav .btn {
 .moderntext{
   color: #171817;
   text-shadow: 0px 0px 1px rgba(20, 20, 20, 1);
-  font-size: 19px;
-  line-height: 30px;
+  font-size: 25px;
+  line-height: 50px;
   margin-bottom: 20px;
 }
 .button-30{
@@ -1341,7 +1329,7 @@ nav .btn {
   border-radius: 40px; 
 }
 .smithsection{
-  display: flex;
+  display: none;
   align-items: center;
   padding: 40px;
 }
@@ -1356,6 +1344,16 @@ nav .btn {
   font-size: 14px;
 }
 /* -media queries */
+@media screen and  (max-width: 1630px){
+ .Apartment{
+  padding: 80px;
+ }
+}
+@media screen and  (max-width: 1450px){
+  .Apartment{
+   padding: 60px;
+  }
+ }
 @media screen and  (max-width: 1350px){
  .Apartment{
    padding: 20px;
@@ -1368,6 +1366,10 @@ nav .btn {
  }
  .partme{
   height: 550px;
+ }
+ .moderntext{
+  font-size: 22px;
+  line-height: 45px;
  }
 }
 @media screen and  (max-width: 1150px){
@@ -1382,6 +1384,9 @@ nav .btn {
   width: 100%;
   object-fit: cover;
   border-radius: 30px 30px 0 0 ;
+}
+.Apartment{
+  padding-top: 45px;
 }
 }
 @media screen and (max-width: 666px){
@@ -1399,15 +1404,14 @@ nav .btn {
   .smithsection{
     padding: 10px;
   }
+  .moderntext{
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 500px){
-  .moderntext{
-    font-size: 18px;
-  }
+ 
   .smithsection{
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
+    display: none;
   }
   .smithsection img{
     margin: 20px;
@@ -1421,12 +1425,14 @@ nav .btn {
 }
 @media screen and (max-width: 450px){
  .looksectiontext{
-   height: 730px;
- }
- .moderntext{
-   font-size: 16px;
+   height: 650px;
  }
 }
+@media screen and (max-width: 419px){
+  .looksectiontext{
+    height: 710px;
+  }
+ }
 @media screen and  (max-width: 340px){
   .looksectiontext{
     height: 800px;
