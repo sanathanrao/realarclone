@@ -279,6 +279,11 @@ nav .btn {
   border-radius: 25px;
 }
 /* -------top-----Image container----media Quries------------- */
+@media screen and  (max-width:1150px){
+  .imagecontainer{
+    padding: 25px;
+  }
+}
 @media screen and  (max-width: 952px){
   .image{
     font-size: 50px;
@@ -289,6 +294,7 @@ nav .btn {
     padding: 0 40px;
     padding-top: 50px;
     background-color: #1c2d37;
+    padding: 20px;
   }
 }
 @media screen and (min-width: 1770px){
@@ -300,7 +306,7 @@ nav .btn {
 }
 @media screen and (max-width: 1070px){
   .imgheading{
-    font-size: 25px;
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 810px){
@@ -313,6 +319,7 @@ nav .btn {
 @media screen and (max-width: 666px){
   .button-25{
     font-size: 18px;
+    margin-left: -10px;
   }
   
   .imagetext{
@@ -325,15 +332,21 @@ nav .btn {
 @media screen and (max-width: 430px){
   .imgheading{
     font-size: 25px;
+    padding: 0px;
+  }
+  .imagetext{
+    padding: 20px 0;
   }
 }
 @media screen and (max-width: 375px){
   
   .imagetext{
     font-size: 16px;
+    padding: 20px 0; 
   }
   .button-25{
     font-size: 14px;
+    margin-left: -20px;
   }
   .image{
     object-fit: cover;
@@ -1897,6 +1910,7 @@ nav .btn {
 .resort{
   margin-top: 10px;
   margin-bottom: 20px;
+  font-size: 30px;
 }
 .emphasis{
   color: #fff;
@@ -1987,6 +2001,10 @@ nav .btn {
 @media screen and  (max-width: 450px){
   .rapidimg img{
      width: 330px;
+  }
+  .unio{
+    font-size: 25px;
+    width: 100%;
   }
 }
 @media screen and  (max-width: 360px){
@@ -2156,5 +2174,10 @@ nav .btn {
     margin: 5px 0;
     display: flex;
     align-items: flex-start;
+  }
+  .copudd{
+    font-size: 12px;
+    width: 100%;
+    margin-top: 20px;
   }
 }
