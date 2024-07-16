@@ -268,10 +268,10 @@ nav .btn {
   color: #000;
   font-size: 16px;
   font-weight: 600;
-  border-radius: 80px 60px 40px 20px/20px 40px 60px 80px;
+  border-radius: 5px;
   border: none;
   z-index: 10;
-  transition-duration: 0.1s;
+  transition-duration: 0.5s;
   left: 20px;
   top: 15px;
 }
@@ -684,12 +684,13 @@ nav .btn {
   color: #000;
   font-size: 16px;
   font-weight: 600;
-  border-radius: 80px 60px 40px 20px/20px 40px 60px 80px;
+  border-radius: 5px;
   border: none;
   z-index: 10;
+  transition-duration: 0.5s;
 }
 .button-27:hover{
-  border-radius: 5px;
+  border-radius: 25px;
 }
 .projectrespo{
   display: flex;
@@ -753,10 +754,11 @@ nav .btn {
   color: #000;
   font-size: 16px;
   font-weight: 600;
-  border-radius: 80px 60px 40px 20px/20px 40px 60px 80px;
+  border-radius: 5px;
   border: none;
   z-index: 10;
   top: -28px;
+  transition-duration: 0.5s;
 }
 .button-28:hover{
   border-radius: 25px;
@@ -944,10 +946,10 @@ nav .btn {
   color: #000;
   background-color: #fff;
   border:none;
-  border-radius: 80px 60px 40px 20px/20px 40px 60px 80px;
+  border-radius: 5px;
   background-repeat: no-repeat;
   background-position: -120px -120px, 0 0;
-  transition-duration: 2s;
+  transition-duration: 0.5s;
   margin-left: 80px;
   
   background-image: -webkit-linear-gradient(
@@ -989,7 +991,7 @@ nav .btn {
 }
 .button-29:hover{
     background-color: #eed26e;
-    border-radius: 5px;
+    border-radius: 25px;
     background-position: 0 0, 0 0;
     
     -webkit-transition-duration: 0.5s;
