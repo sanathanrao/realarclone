@@ -1595,8 +1595,13 @@ nav .btn {
 /* ----------------------------------------- */
 .testimonialssection{
   display: flex;
+  align-items: center;
   background: #c0cdd1;
   padding: 40px;
+  border-radius: 30px 30px 0 0;
+}
+.tesphooadj{
+ width: 100%;
 }
 .testilarge{
   color: transparent;
@@ -1641,14 +1646,16 @@ nav .btn {
   margin-left: 20px;
   font-weight: 500;
 }
+.floatingsection{
+  margin-right: 30px;
+}
 .nofloatmain{
   position: relative;
-  left: -50px;
+  top: 200px;
 }
 .float{
   position: relative;
-  top: -220px;
-  left: 100px;
+  left: 150px;
 }
 .jannysection img{
   width: 150px;
@@ -1682,10 +1689,12 @@ nav .btn {
     flex-direction: column-reverse;
   }
   .nofloatmain{
-    left: 300px;
+    top: 0;
+    left: 200px;
   }
   .float{
-    top: 50px;
+    top: 70px;
+    left: -100px;
     margin-bottom: 30px;
   }
   .floatingsection{
@@ -1704,6 +1713,7 @@ nav .btn {
     margin-left: -200px;
     margin-top: 30px;
   }
+ 
 }
 @media screen and  (max-width: 800px){
    .testilarge{
@@ -1726,6 +1736,15 @@ nav .btn {
   .floatingsection{
     margin-left: -280px;
    }
+   .nofloatmain{
+    top: 0;
+    left: 300px;
+  }
+  .float{
+    top: 70px;
+    left: 0;
+    margin-bottom: 30px;
+  }
 }
 @media screen and  (max-width: 666px){
   .testimonialssection{
@@ -1734,7 +1753,7 @@ nav .btn {
   .nofloatmain{
     width: 380px;
     height: 420px;
-    left: 280px;
+
   }
 }
 @media screen and  (max-width: 600px){
@@ -1746,8 +1765,8 @@ nav .btn {
     margin-top: 25px;
    }
    .nofloatmain{
-    width: 300px;
     height: 350px;
+    left: 260px;
     object-fit: fill;
   }
   .float{
@@ -1773,15 +1792,9 @@ nav .btn {
   .nofloatmain{
     width: 380px;
     height: 420px;
-    left: 280px;
   }
 }
 @media screen and  (max-width: 370px){
-}
-.nofloatmain{
- width: 300px;
- height: 380px;
- left: 280px;
 }
 
 
