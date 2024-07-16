@@ -1620,7 +1620,7 @@ nav .btn {
 .testilarge{
   color: transparent;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #696969;
+  -webkit-text-stroke-color: #fff;
    font-size: 90px;
 }
 .client{
@@ -2171,7 +2171,7 @@ nav .btn {
   .terms{
     display: flex;
     flex-direction: column;
-    margin-left: -190px;
+    margin-left: -180px;
   }
   .pocc{
     margin: 10px 10px 10px 0;
