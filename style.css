@@ -71,7 +71,7 @@ nav {
   box-shadow: none !important;
 }
 .manvika{
-  width: 200px;
+  width: 120px;
 }
 #check{
   display: none;
@@ -249,16 +249,16 @@ nav .btn {
   padding: 20px;
 }
 .imagetext{
-  line-height: 1.6;
+  line-height: 2;
   font-family: "Varela Round", sans-serif;
   color: #fff;
   position: relative;
   background: none;
   font-weight: 50px;
-  width: 50%;
+  width: 70%;
   font-size: 20px;
   z-index: 7;
-  padding: 20px;
+  padding: 40px 20px;
   
 }
 .button-25{
@@ -306,14 +306,20 @@ nav .btn {
 }
 @media screen and (max-width: 1070px){
   .imgheading{
-    font-size: 30px;
+    font-size: 38px;
   }
 }
 @media screen and (max-width: 810px){
- 
+  .imgheading{
+    text-align: center;
+  }
   .imagetext{
     width: 90%;
     font-size: 20px;
+    text-align: center;
+  }
+  .button-25{
+    text-align: center;
   }
 }
 @media screen and (max-width: 666px){
@@ -331,7 +337,7 @@ nav .btn {
 }
 @media screen and (max-width: 430px){
   .imgheading{
-    font-size: 25px;
+    font-size: 35px;
     padding: 0px;
   }
   .imagetext{
