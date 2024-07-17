@@ -467,7 +467,9 @@ nav .btn {
   }
 }
 @media screen and (max-width: 500px){
-  
+   .imagecontainer{
+    padding: 10px;
+   }
 }
 @media screen and (max-width: 430px){
   .imgheading{
@@ -486,7 +488,6 @@ nav .btn {
   }
   .button-25{
     font-size: 14px;
-    margin-left: -20px;
   }
   .image{
     object-fit: cover;
