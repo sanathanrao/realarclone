@@ -637,6 +637,12 @@ nav .btn {
   padding-top: 40px;
   font-weight: 600;
 }
+.valuation img{
+  transition: transform 0.5s ease;
+}
+.valuation img:hover{
+  transform: rotate(-180deg);
+}
 .valuationtext{
   color: #adb3b6;
   font-size: 16px;
@@ -1763,7 +1769,7 @@ nav .btn {
 .testilarge{
   color: transparent;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-color: lightcyan;
    font-size: 90px;
 }
 .client{
