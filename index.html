@@ -10,8 +10,50 @@
     <title>Healthy fats</title>
 </head>
 <body>
+     
+  <button class="btn-open-popup" onclick="togglePopup()"> 
+    Open Popup Form 
+ </button> 
+
+ <div id="popupOverlay"
+   class="overlay-container"> 
+   <div class="popup-box"> 
+     <h2 class="coenow">Contact Owner</h2> 
+     <form action="https://api.web3forms.com/submit" method="POST"   name=”EmailForm”  class="form-container"> 
+      <input type="hidden" name="access_key" value="4e2a6e80-4659-4f30-b225-381f222f98eb">
+   
+       <input class="form-input" type="text" placeholder="Enter Your Username" id="name" name="name" required>  
+       <input class="form-input" type="email" placeholder="Enter Your Email" id="email" name="email" required> 
+       <textarea name="message" placeholder="Message.." class="form-input" required></textarea>
+
+       <button class="btn-submit"
+           type="submit"> 
+       Submit 
+       </button> 
+     </form> 
+
+     <button class="btn-close-popup"
+         onclick="togglePopup()"> 
+     Close 
+     </button> 
+   </div> 
+ </div> 
+
+ <script> 
+   function togglePopup() { 
+     const overlay = document.getElementById('popupOverlay'); 
+     overlay.classList.toggle('show'); 
+   } 
+ </script>
+
+
+
+<!-- -------------------------------navbar---------------------------------------- -->
     <nav class="flex align-center">
-         <img class="manvika" src="manvikaedit.png" alt="logo">
+      <div class="imgmanlc">
+        <img class="manvika" src="manvikawhite.png" alt="logo">
+      </div>
+         <!-- <img class="manvika" src="manvikawhite.png" alt="logo"> -->
         <ul>
           <li class="big-screens">
             <a href="/">Home</a>
@@ -19,13 +61,11 @@
             <a href="#listingsection">Properties</a>
             <a href="#testimonialssection">Testimonial</a>
           </li>
-          <input type="checkbox" id="check">
-          <li class="small-screens checkbtn">
-            <i class="fa-solid fa-bars"></i>
-          </li>
+      
         </ul>
 
-        <button class="button-24" role="button">Contact Us ➤</button>
+        <a href="#footer"><button class="button-24" role="button">Contact Us ➤</button></a>
+
       </nav>
       <!-- -------------------------------- -->
    <div class="imagecontainer">
@@ -195,7 +235,7 @@
                      </div>
                   </div>
     
-                  <button class="button-29" role="button">Know More ➤</button>
+                  <button  onclick="togglePopup()" class="button-29 btn-open-popup" role="button">Know More ➤</button>
                   <!-- <div class="area">
                     <div class="nofarea ba">
                      <img class="areaimg" src="images/bed.svg" alt="">
@@ -259,7 +299,7 @@
                  </div>
               </div>
   
-              <button class="button-29" role="button">Know More ➤</button>  
+              <button onclick="togglePopup()" class="button-29 btn-open-popup" role="button">Know More ➤</button>  
                 <hr class="grahr" >
               </div>  
   
@@ -296,7 +336,7 @@
                </div>
             </div>
 
-            <button class="button-29" role="button">Know More ➤</button>
+            <button onclick="togglePopup()" class="button-29 btn-open-popup" role="button">Know More ➤</button>
 
               <!-- <div class="area">
                 <div class="nofarea ba">
@@ -464,10 +504,10 @@
           </div> -->
 
              <!-- ---------------------------------Footer------------------------------------------>
-             <div class="footer">
+             <div id="footer" class="footer">
                  <div class="footericons">
                   <div class="footer-img">
-                   <img src="manvika.png">
+                   <img src="manvikablack.png">
                   </div>
                    
                   <div class="footertext" >
@@ -478,7 +518,6 @@
                   <div class="foo-links">
                     <a href="https://www.facebook.com/manvikadevelopers/"  target="_blank" ><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="https://www.instagram.com/manvika_developers"  target="_blank" ><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://prakashgroup.net/"  target="_blank" ><i class="fa-solid fa-globe"></i></a>
                   </div>
                 </div>
                 
