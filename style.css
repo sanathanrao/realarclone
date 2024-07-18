@@ -1403,7 +1403,7 @@ nav .btn {
 
 @media screen and (max-width: 400px){
    .listingsection{
-    padding: 30px;
+    padding: 18px;
    }
    .button-29{
     padding: 8px;
@@ -1429,6 +1429,9 @@ nav .btn {
   }
   .alpidown{
     margin-top: 50px;
+   }
+   .sqyard{
+    padding-right: 50px;
    }
 }
 @media screen and (max-width: 375px){
