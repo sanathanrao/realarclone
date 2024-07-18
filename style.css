@@ -1632,6 +1632,8 @@ nav .btn {
  justify-content: center;
  background-color: #1c2d37;
  padding: 40px;
+}
+.tesomgimg{
 
 }
 .buysellrepons{
@@ -1693,6 +1695,12 @@ nav .btn {
     width: 900px;
     object-fit: cover;
     margin-bottom: 40px;
+  }
+  .hbuings{
+    border-radius: 20px;
+  }
+  .tesomgimg{
+    border-radius: 20px;
   }
   .buysellrepons{
     display: flex;
