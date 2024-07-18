@@ -65,7 +65,9 @@
   color: #444; 
   text-align: left; 
 } 
-
+.mesio{
+   bo
+}
 .form-input { 
   color: #1c2d37;
   font-family: "Varela Round", sans-serif;
@@ -608,7 +610,7 @@ nav .btn {
 }
 .aboutimg img{
    margin-left: 20px;
-   border-radius: 20px 80px 20px  20px;
+   border-radius: 20px;
    width: 100%;
 }
 .aboutend{
@@ -856,7 +858,7 @@ nav .btn {
   width: 600px;
   margin-left: 60px;
   margin-right: 60px;
-  border-radius: 20px 100px 20px 20px;
+  border-radius: 20px;
   border: 2px solid #fff;
   object-fit: cover;
   margin-top: 135px;
@@ -1589,6 +1591,9 @@ nav .btn {
 @media screen and (max-width: 450px){
  .looksectiontext{
    height: 650px;
+ }
+ .looksection{
+  padding: 10px;
  }
 }
 @media screen and (max-width: 419px){
