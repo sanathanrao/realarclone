@@ -999,7 +999,6 @@ nav .btn {
   margin-bottom: 100px;
 }
 .alpinaimg img{
-   width: 100%; 
    border-radius: 20px;
    margin-right: 20px;
 }
@@ -1067,7 +1066,7 @@ nav .btn {
   -webkit-transform:rotate(90deg);
   position: relative;
   top: 230px;
-  left: 280px;
+  left: 270px;
 }
 .abbuilders{
   display: flex;
