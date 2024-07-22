@@ -999,6 +999,7 @@ nav .btn {
   margin-bottom: 100px;
 }
 .alpinaimg img{
+   width: 100%; 
    border-radius: 20px;
    margin-right: 20px;
 }
@@ -1244,7 +1245,6 @@ nav .btn {
     margin-top: 28px;
   }
   .listingtext{
-    font-size: 16px;
     width: 100%;
     font-weight: 500;
     margin-bottom: 20px;
@@ -1406,7 +1406,7 @@ nav .btn {
 
 @media screen and (max-width: 400px){
    .listingsection{
-    padding: 18px;
+    padding: 16px;
    }
    .button-29{
     padding: 8px;
@@ -1425,7 +1425,8 @@ nav .btn {
   .alpinaimg img{
     height: 250px;
     width: 100%;
-    border-radius: 20px 60px 20px 20px;
+    border-radius: 20px;
+    margin-top: -20px;
   }
   .detailssection, .area, .price{
     width: 100%;
