@@ -151,7 +151,6 @@ html {
   width: 100%;
   height: 100%;
   font-family: "Montserrat", serif;
-  background-image: url("img_tree.gif");
   background-repeat: no-repeat;
   background-attachment: fixed;
   overflow-x: hidden;
@@ -398,6 +397,7 @@ nav .btn {
   
 }
 .button-25{
+  cursor: pointer;
   position: relative;
   padding: 13px 18px;
   background-color: #eed26e;
@@ -2340,4 +2340,6 @@ nav .btn {
   .pocc{
     margin: 10px 10px 10px 0;
   }
+}
+/* -------------------------------------------- */
 }
